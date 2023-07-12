@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="knightTalentCalc.js" defer></script>
 </head>
 <body>
     <div>
@@ -22,15 +23,19 @@
             </thead>
             
             <tbody>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
+                <td><input type="number" id="levelInOld"></td>
+                <td><input type="number" id="talentInOld"></td>
                 <td><p id="nowView"></p></td>
-                <td><input type="number"></td>
+                <td><input type="number" id="boostInOld"></td>
                 <td><p id="nowOverall"></p></td>
             </tbody>
 
-                <!-- After Tabel lower  -->
+            
 
+        </table>
+        <Button id="calculateOld">Calculate</Button>
+                <!-- After Tabel lower  -->
+        <table>
             <thead>
                 <tr>
                     <th><h3>Level</h3></th>
@@ -42,13 +47,14 @@
             </thead>
             
             <tbody>
-                <td><input type="number"></td>
-                <td><input type="number"></td>
+                <td><input type="number" id="levelInNew"></td>
+                <td><input type="number" id="talentInNew"></td>
                 <td><p id="afterView"></p></td>
-                <td><input type="number"></td>
+                <td><input type="number" id="boostInNew"></td>
                 <td><p id="afterOverall"></p></td>
             </tbody>
         </table>
+        <Button id="calculateNew">Calculate</Button>
 
     </div>
     
