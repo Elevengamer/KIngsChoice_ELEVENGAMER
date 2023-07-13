@@ -1,0 +1,84 @@
+:root{
+    --dark: #48007c;
+    --bright: cyan;
+
+
+
+    /* Kings Choice like*/
+    
+
+    /* Alliance Like */
+    
+    
+    
+    
+    
+}
+
+* {
+    line-height: 1.5;
+}
+
+a{
+    color: var(--bright);
+}
+
+body {
+    background: var(--dark);
+    margin: 0;
+    padding: 20px;
+    color: var(--bright);
+    max-width: 100vh;
+}
+
+h1,
+h2 {
+    background: var(--bright);
+    color: var(--dark);
+    text-align: center;
+    padding: 1%;
+    border-radius: 20px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 1500;
+}
+
+table{
+    width:100%;
+    border-radius: 10px;
+}
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+
+td,th{
+    width:16%
+}
+
+
+@media(min-width:1200px) {
+    .mainContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 50%;
+        background: var(--dark);
+        color: var(--bright);
+        margin: 0px auto;
+        padding: 1.5% 1%;
+        box-shadow: 0px 0px 4px 4px var(--bright);
+        min-height: 100vh;
+    }
+
+    body {
+        font-size: 16px;
+        background: linear-gradient(black, var(--dark),var(--bright),var(--dark),black);
+        margin: 0;
+        padding: 0px;
+        color: var(--bright);
+        max-width: none;
+    }
+}
