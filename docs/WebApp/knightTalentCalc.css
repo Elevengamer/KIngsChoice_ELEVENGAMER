@@ -1,25 +1,20 @@
 :root{
-    --dark: #48007c;
+    --dark: black;
     --bright: cyan;
-
-
-
-    /* Kings Choice like*/
-    
-
-    /* Alliance Like */
-    
-    
-    
-    
-    
+    --text: navy;    
 }
 
 * {
     line-height: 1.5;
 }
 
-a{
+input{
+    border-style: none;
+    background-color: var(--text);
+    color: var(--bright);
+}
+p{    
+    background: var(--text);
     color: var(--bright);
 }
 
@@ -50,13 +45,31 @@ table{
 table,
 th,
 td {
-    border: 2px solid black;
+    border: 2px solid var(--bright);
     border-collapse: collapse;
-    color: black;
+    color: var(--bright);
+    
 }
 
 td,th{
-    width:16%
+    width:16%;    
+}
+
+td{
+    background-color: var(--text);
+}
+
+button{
+    border-radius: 10px;
+    border: 2px solid var(--bright);
+    background-color: black;
+    color: var(--bright);
+    margin-top: 5px;
+    margin-bottom: 10px ;
+}
+
+a{
+    color: white;
 }
 
 
@@ -67,7 +80,7 @@ td,th{
         width: 50%;
         background: var(--dark);
         color: var(--bright);
-        margin: 0px auto;
+        margin: 20px auto;
         padding: 1.5% 1%;
         box-shadow: 0px 0px 4px 4px var(--bright);
         min-height: 100vh;
