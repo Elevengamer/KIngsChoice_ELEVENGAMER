@@ -11,54 +11,48 @@
     <div class="mainContainer">
         <h1>Knight Talent Calculator</h1>
 
-        <table >
-            <tbody>
+        <table>
+
+            <thead>
                 <tr>
                     <th><h3>Level</h3></th>
-                    <td><input type="number" id="levelInOld"></td>
-                </tr>
-                <tr>
                     <th><h3>Talent</h3></th>
-                    <td><input type="number" id="talentInOld"></td>
-                </tr>
-                <tr>
-                    <th><h3>After</h3></th>
-                    <td><p id="nowView"></p></td>
-                </tr>
-                <tr>
+                    <th><h3>Now</h3></th>
                     <th><h3>Boost (Aura/Lover %)</h3></th>
-                    <td><input type="number" id="boostInOld"></td>
-                </tr>
-                <tr>
                     <th><h3>Result</h3></th>
-                    <td><input type="number" id="talentInOld"></td>
                 </tr>
+            </thead>
+            
+            <tbody>
+                <td><input type="number" id="levelInOld"></td>
+                <td><input type="number" id="talentInOld"></td>
+                <td><p id="nowView"></p></td>
+                <td><input type="number" id="boostInOld"></td>
+                <td><p id="nowOverall"></p></td>
             </tbody>
+
+            
+
         </table>
         <Button id="calculateOld">Calculate</Button>
                 <!-- After Tabel lower  -->
-        <table id="MOBILE_TABLE">
-            <tbody>
+        <table>
+            <thead>
                 <tr>
                     <th><h3>Level</h3></th>
-                    <td><input type="number" id="levelInNew"></td>
-                </tr>
-                <tr>
                     <th><h3>Talent</h3></th>
-                    <td><input type="number" id="talentInNew"></td>
-                </tr>
-                <tr>
                     <th><h3>After</h3></th>
-                    <td><p id="afterView"></p></td>
-                </tr>
-                <tr>
                     <th><h3>Boost (Aura/Lover %)</h3></th>
-                    <td><input type="number" id="boostInNew"></td>
-                </tr>
-                <tr>
                     <th><h3>Result</h3></th>
-                    <td><input type="number" id="talentInNew"></td>
                 </tr>
+            </thead>
+            
+            <tbody>
+                <td><input type="number" id="levelInNew"></td>
+                <td><input type="number" id="talentInNew"></td>
+                <td><p id="afterView"></p></td>
+                <td><input type="number" id="boostInNew"></td>
+                <td><p id="afterOverall"></p></td>
             </tbody>
         </table>
         <Button id="calculateNew">Calculate</Button>
