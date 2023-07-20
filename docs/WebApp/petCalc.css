@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     width: 100vw;
     height: 100vh;   
@@ -12,6 +16,26 @@ body{
 
 h2{
     border-radius: 20px;
+}
+
+h3{
+    font-size: 12px;
+    @media screen and (min-width: 375px)  {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 525px)  {
+        font-size: 18px;
+    }
+}
+
+td{
+    font-size: 10px;
+    @media screen and (min-width: 375px)  {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 525px)  {
+        font-size: 16px;
+    }
 }
 
 table{
@@ -55,5 +79,3 @@ th,td,input,p{
         width: 100%;
     }    
 }
-
-
