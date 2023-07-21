@@ -77,8 +77,8 @@ td{
 }
 
 table{
-    max-width: 100%;
-    width: 100%;
+    width: 98%;
+    max-width: 98%;
 }
 
 table,table td{
@@ -92,7 +92,7 @@ th,td{
 
     background-color: var(--darkRed);
     border: 1px solid var(--golden);
-    width: 20%;
+    width: 14%;
 }
 
 table th{
@@ -135,10 +135,5 @@ input,p{
         padding: 0px;
         color: var(--golden);
         max-width: none;
-    }
-
-    table{
-        max-width: 100%;
-        width: 100%;
-    }    
+    }       
 }
