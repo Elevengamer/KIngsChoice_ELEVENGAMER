@@ -1,4 +1,13 @@
+:root{
+    --golden: rgb(246, 230, 176);
+    --blue: rgb(57, 149, 229);
+    --darkRed: rgb(120, 25, 41);
+    --brighterRed: rgb(130, 2, 3);
+    --black: black;
+}
+
 *{
+    line-height: 1.5;
     box-sizing: border-box;
 }
 
@@ -7,18 +16,37 @@ body{
     height: 100vh;   
     margin: 0;
     padding: 20px; 
+
+    background-color: var(--black);
+    color: var(--brighterRed);
+
 }
 
 .mainContainer{
     width: 100%;
     height: 100%;
+
+    background-color: var(--black);
+    color: var(--brighterRed);
 }
 
 h1{
+    border-radius: 10px;
+    background-color: var(--darkRed);
+    border: 2px solid var(--golden);
+    color: var(--golden);
+    text-align: center;
+    padding: 1%;
     border-radius: 20px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 1500;
+    box-shadow: 0px 0px 4px 4px var(--blue);
 }
 
 h2{
+    color: var(--golden);
+
     font-size: 12px;
     @media screen and (min-width: 375px)  {
         font-size: 14px;
@@ -26,6 +54,16 @@ h2{
     @media screen and (min-width: 525px)  {
         font-size: 18px;
     }
+}
+
+button{
+    border-radius: 10px;
+    border: 2px solid var(--golden);
+    background-color: var(--darkRed);
+    color: var(--golden);
+    margin-top: 15px;
+    margin-bottom: 20px ;
+    box-shadow: 0px 0px 2px 2px var(--blue);
 }
 
 td{
@@ -43,34 +81,59 @@ table{
     width: 100%;
 }
 
-table,table th,table td{
-    border: 2px black solid;
+table,table td{
+    background-color: var(--darkRed);
+    color: var(--golden);
+    border: 2px var(--golden) solid;
     border-collapse: collapse;
 }
 
-th,td,input,p{
+th,td{
+
+    background-color: var(--darkRed);
+    border: 1px solid var(--golden);
     width: 20%;
 }
 
-@media(min-width:1200px) {
+table th{
+    background-color: var(--black);
+    color: var(--golden);
+    border: 2px var(--golden) solid;
+    border-collapse: collapse;
+}
+
+a{
+    color: var(--blue);
+}
+
+input,p{
+    width: 100%;
+    background-color: var(--darkRed);
+    color: var(--golden);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media(min-width:1000px) {
     .mainContainer {
         padding-left: 20px;
         padding-right: 20px;
         width: 50%;
-        background: black;
-        color: green;
+        background: var(--black);
+        color: var(--golden);
         margin: 20px auto;
         padding: 1.5% 1%;
-        box-shadow: 0px 0px 4px 4px blue;
-        min-height: 99vh;
+        box-shadow: 0px 0px 4px 4px var(--golden);
+        height: 100%;
     }
 
     body {
         font-size: 16px;
-        background: linear-gradient(black, red,blue,red,black);
+        background: linear-gradient(var(--black), var(--darkRed),var(--golden),var(--darkRed),var(--black));
         margin: 0;
         padding: 0px;
-        color: green;
+        color: var(--golden);
         max-width: none;
     }
 

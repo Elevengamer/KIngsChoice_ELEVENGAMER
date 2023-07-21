@@ -6,7 +6,6 @@
     --black: black;
 }
 
-
 *{
     line-height: 1.5;
     box-sizing: border-box;
@@ -42,7 +41,8 @@ h1{
     margin: 0;
     margin-bottom: 35px;
     font-weight: 1500;
-    box-shadow: 0px 0px 4px 4px var(--blue);}
+    box-shadow: 0px 0px 4px 4px var(--blue);
+}
 
 h2{
     color: var(--golden);
@@ -61,8 +61,8 @@ button{
     border: 2px solid var(--golden);
     background-color: var(--darkRed);
     color: var(--golden);
-    margin-top: 5px;
-    margin-bottom: 10px ;
+    margin-top: 15px;
+    margin-bottom: 20px ;
     box-shadow: 0px 0px 2px 2px var(--blue);
 }
 
@@ -81,7 +81,7 @@ table{
     width: 100%;
 }
 
-table,table th,table td{
+table,table td{
     background-color: var(--darkRed);
     color: var(--golden);
     border: 2px var(--golden) solid;
@@ -91,21 +91,31 @@ table,table th,table td{
 th,td{
 
     background-color: var(--darkRed);
-    border: 1px solid var(--black);
-    border-collapse: none ;
+    border: 1px solid var(--golden);
     width: 20%;
+}
+
+table th{
+    background-color: var(--black);
+    color: var(--golden);
+    border: 2px var(--golden) solid;
+    border-collapse: collapse;
+}
+
+a{
+    color: var(--blue);
 }
 
 input,p{
     width: 100%;
     background-color: var(--darkRed);
     color: var(--golden);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
 }
 
-
-
-
-@media(min-width:1200px) {
+@media(min-width:1000px) {
     .mainContainer {
         padding-left: 20px;
         padding-right: 20px;
@@ -115,7 +125,7 @@ input,p{
         margin: 20px auto;
         padding: 1.5% 1%;
         box-shadow: 0px 0px 4px 4px var(--golden);
-        min-height: 99vh;
+        height: 100%;
     }
 
     body {

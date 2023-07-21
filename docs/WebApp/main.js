@@ -1,12 +1,6 @@
 const dktc = document.getElementById("dktc").click
 const mktc = document.getElementById("mktc").click
 const dbc = document.getElementById("dbc").click
-const mbc = document.getElementById("mbc").click
-const dpc = document.getElementById("dpc").click
-const mpc = document.getElementById("mpc").click
-
-
-
 
 const ktc = document.getElementById('ktc').addEventListener('click', (e) =>{
     let screenWidth = screen.width;
