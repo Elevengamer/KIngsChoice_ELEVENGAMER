@@ -12,19 +12,11 @@
     <div class="mainContainer">
 
         <h1>Main menu</h1>
-
-        <table>
-            <thead>
-                <th>Selection</th>
-            </thead>
-            <tbody>
-                <div>
-                    <a id="ktc" href="knightTalentCalc.html">Knight Talent Calculator</a>
-                    <a id="bc" href="bookCalc.html">Book Calculator</a>
-                    <a id="pc" href="petCalc.html">Pet Calculator</a>
-                </div>
-            </tbody>
-        </table>
+       
+        <a id="ktc" href="knightTalentCalc.html">Knight Talent Calculator</a>
+        <a id="bc" href="bookCalc.html">Book Calculator</a>
+        <a id="pc" href="petCalc.html">Pet Calculator</a>
+        
     </div>
 </body>
 </html>
@@ -44,7 +36,7 @@
 
 body{
     width: 100vw;
-    height: 100vh;   
+    height: 90vh;   
     margin: 0;
     padding: 20px; 
 
@@ -58,6 +50,7 @@ body{
 
     background-color: var(--black);
     color: var(--brighterRed);
+    align-items: center;
 }
 
 h1{
@@ -75,7 +68,19 @@ h1{
 }
 
 a{
-    color: var(--blue);
+    color: var(--golden);
+    background-color: var(--darkRed);
+    display: block;
+    text-decoration: none;
+    border: 2px solid var(--golden);
+    box-shadow: 0px 0px 4px 4px var(--blue);
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 @media(min-width:1000px) {
