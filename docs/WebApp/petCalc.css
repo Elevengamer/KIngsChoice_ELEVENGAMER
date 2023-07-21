@@ -56,6 +56,25 @@ h2{
     }
 }
 
+h3{
+    font-size: 8px;
+    @media screen and (min-width: 380px)  {
+        font-size: 10px;
+    }
+    @media screen and (min-width: 440px)  {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 500px)  {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1200px)  {
+        font-size: 16px;
+    }
+    @media screen and (min-width: 1300px)  {
+        font-size: 18px;
+    }
+}
+
 button{
     border-radius: 10px;
     border: 2px solid var(--golden);
