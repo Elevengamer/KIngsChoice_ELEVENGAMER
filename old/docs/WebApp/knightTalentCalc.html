@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="knightTalentCalc.css">
+    <script src="knightTalentCalc.js" defer></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>Knight Talent Calculator</h1>
+
+
+
+        <table>
+            <thead>
+                <th>upgrade chance</th> 
+                <th>Talent Sheets to use</th>
+                <th>Possible upgrades</th>
+            </thead>
+            <tbody>
+                <td><input type="number" name="inUpChance" id=""></td>
+                <td><input type="number" name="inUsableSheets" id=""></td>
+                <td><p id="talentUpOut"></p></td>
+            </tbody>
+
+        </table>
+
+        <button id="calculateTalentUp">Calculate</button>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th><h3>Level</h3></th>
+                    <th><h3>Talent</h3></th>
+                    <th><h3>Now</h3></th>
+                    <th><h3>Boost (Aura/Lover %)</h3></th>
+                    <th><h3>Result</h3></th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <td><input type="number" id="levelInOld"></td>
+                <td><input type="number" id="talentInOld"></td>
+                <td><p id="nowView"></p></td>
+                <td><input type="number" id="boostInOld"></td>
+                <td><p id="nowOverall"></p></td>
+            </tbody>
+
+            
+
+        </table>
+        <Button id="calculateOld">Calculate</Button>
+                <!-- After Tabel lower  -->
+        <table>
+            <thead>
+                <tr>
+                    <th><h3>Level</h3></th>
+                    <th><h3>Talent</h3></th>
+                    <th><h3>After</h3></th>
+                    <th><h3>Boost (Aura/Lover %)</h3></th>
+                    <th><h3>Result</h3></th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <td><input type="number" id="levelInNew"></td>
+                <td><input type="number" id="talentInNew"></td>
+                <td><p id="afterView"></p></td>
+                <td><input type="number" id="boostInNew"></td>
+                <td><p id="afterOverall"></p></td>
+            </tbody>
+        </table>
+        <Button id="calculateNew">Calculate</Button>
+
+
+
+        <div>
+            <a href="main.html">Back</a>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>

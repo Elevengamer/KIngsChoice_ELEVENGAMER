@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Calculator</title>
+    <script src="bookCalc.js"></script>
+    <link rel="stylesheet" href="bookCalc.css">
+</head>
+<body>
+    <div class="mainContainer">
+
+        <h1>Book Calculator</h1>
+
+        <div>
+            <h2>RED</h2>
+            <table>
+                <thead>
+                    <th><h3>Points</h3></th>
+                    <th>100</th>
+                    <th>400</th>
+                    <th>1000</th>
+                    <th>5000</th>
+                    <th>10000</th>
+                    <th><h3>Result</h3></th>
+                </thead>
+                <tbody>
+                    <td><h3>Count</h3></td>
+                    <td><Input type="number" id="in100Red" value="0"></Input></td>
+                    <td><Input type="number" id="in400Red" value="0"></Input></td>
+                    <td><Input type="number" id="in1000Red" value="0"></Input></td>
+                    <td><Input type="number" id="in5000Red" value="0"></Input></td>
+                    <td><Input type="number" id="in10000Red" value="0"></Input></td>
+                    <td><p id="resultRed"></p></td>
+                </tbody>
+
+            </table>
+        </div>
+        <div>
+            <h2>Green</h2>
+            <table>
+                <thead>
+                    <th><h3>Points</h3></th>
+                    <th>100</th>
+                    <th>400</th>
+                    <th>1000</th>
+                    <th>5000</th>
+                    <th>10000</th>
+                    <th><h3>Result</h3></th>
+                </thead>
+                <tbody>
+                    <td><h3>Count</h3></td>
+                    <td><Input type="number" id="in100Green" value="0"></Input></td>
+                    <td><Input type="number" id="in400Green" value="0"></Input></td>
+                    <td><Input type="number" id="in1000Green" value="0"></Input></td>
+                    <td><Input type="number" id="in5000Green" value="0"></Input></td>
+                    <td><Input type="number" id="in10000Green" value="0"></Input></td>
+                    <td><p id="resultRed"></p></td>
+                </tbody>
+
+            </table>
+        </div>
+        <div>
+            <h2>Blue</h2>
+            <table>
+                <thead>
+                    <th><h3>Points</h3></th>
+                    <th>100</th>
+                    <th>400</th>
+                    <th>1000</th>
+                    <th>5000</th>
+                    <th>10000</th>
+                    <th><h3>Result</h3></th>
+                </thead>
+                <tbody>
+                    <td><h3>Count</h3></td>
+                    <td><Input type="number" id="in100Blue" value="0"></Input></td>
+                    <td><Input type="number" id="in400Blue" value="0"></Input></td>
+                    <td><Input type="number" id="in1000Blue" value="0"></Input></td>
+                    <td><Input type="number" id="in5000Blue" value="0"></Input></td>
+                    <td><Input type="number" id="in10000Blue" value="0"></Input></td>
+                    <td><p id="resultBlue"></p></td>
+                </tbody>
+
+            </table>
+        </div>
+        <div>
+            <h2>Purple</h2>
+            <table>
+                <thead>
+                    <th><h3>Points</h3></th>
+                    <th>100</th>
+                    <th>400</th>
+                    <th>1000</th>
+                    <th>5000</th>
+                    <th>10000</th>
+                    <th><h3>Result</h3></th>
+                </thead>
+                <tbody>
+                    <td><h3>Count</h3></td>
+                    <td><Input type="number" id="in100Purple" value="0"></Input></td>
+                    <td><Input type="number" id="in400Purple" value="0"></Input></td>
+                    <td><Input type="number" id="in1000Purple" value="0"></Input></td>
+                    <td><Input type="number" id="in5000Purple" value="0"></Input></td>
+                    <td><Input type="number" id="in10000Purple" value="0"></Input></td>
+                    <td><p id="resultPurple"></p></td>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Brown</h2>
+            <table>
+                <thead>
+                    <th><h3>Points</h3></th>
+                    <th>100</th>
+                    <th>400</th>
+                    <th>1000</th>
+                    <th>5000</th>
+                    <th>10000</th>
+                    <th><h3>Result</h3></th>
+                </thead>
+                <tbody>
+                    <td><h3>Count</h3></td>
+                    <td><Input type="number" id="in100Brown" value="0"></Input></td>
+                    <td><Input type="number" id="in400Brown" value="0"></Input></td>
+                    <td><Input type="number" id="in1000Brown" value="0"></Input></td>
+                    <td><Input type="number" id="in5000Brown" value="0"></Input></td>
+                    <td><Input type="number" id="in10000Brown" value="0"></Input></td>
+                    <td><p id="resultBrown"></p></td>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div>
+            <a href="main.html">back</a>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
+<!--
+INPUT CHNAGED Event
+
+    let element = document.querySelector('#my-input');
+
+element.addEventListener('input', function(event) {
+    console.log('Value changed:', event.target.value);
+});
+
+-->
+
+<!--
+    Hier ist ein Beispiel, wie Sie überprüfen können, ob alle Zellen in einer HTML-Tabelle ausgefüllt sind und die Werte in den Spalten berechnen, die auf den Zahlen im Header basieren:
+
+// Zugriff auf die Tabelle
+let table = document.querySelector('#my-table');
+
+// Zugriff auf alle Zeilen der Tabelle
+let rows = table.querySelectorAll('tr');
+
+// Zugriff auf den Header der Tabelle
+let header = rows[0];
+
+// Zugriff auf die Zellen im Header
+let headerCells = header.querySelectorAll('th');
+
+// Erstellen eines Arrays zum Speichern der Werte für jede Spalte
+let columnValues = [];
+
+// Initialisieren des Arrays mit 0 für jede Spalte
+for (let i = 0; i < headerCells.length; i++) {
+    columnValues.push(0);
+}
+
+// Überprüfen, ob alle Zellen ausgefüllt sind
+let allCellsFilled = true;
+
+// Durchlaufen aller Zeilen (außer dem Header)
+for (let i = 1; i < rows.length; i++) {
+    // Zugriff auf die Zellen in der aktuellen Zeile
+    let cells = rows[i].querySelectorAll('td');
+
+    // Durchlaufen aller Zellen in der aktuellen Zeile
+    for (let j = 0; j < cells.length; j++) {
+        // Überprüfen, ob die aktuelle Zelle ausgefüllt ist
+        if (cells[j].textContent.trim() === '') {
+            allCellsFilled = false;
+            break;
+        }
+
+        // Berechnen des Werts für die aktuelle Spalte
+        let cellValue = parseInt(cells[j].textContent, 10);
+        let headerValue = parseInt(headerCells[j].textContent, 10);
+        columnValues[j] += cellValue * headerValue;
+    }
+
+    if (!allCellsFilled) {
+        break;
+    }
+}
+
+if (allCellsFilled) {
+    console.log('Alle Zellen sind ausgefüllt.');
+    console.log('Werte für jede Spalte:', columnValues);
+} else {
+    console.log('Nicht alle Zellen sind ausgefüllt.');
+}
+Kopieren
+In diesem Beispiel wird eine Tabelle mit der ID my-table verwendet. Zunächst werden alle Zeilen und der Header der Tabelle abgerufen. Dann wird ein Array erstellt, um die Werte für jede Spalte zu speichern, und dieses Array wird mit 0 für jede Spalte initialisiert.
+
+Anschließend wird über alle Zeilen (außer dem Header) und alle Zellen in jeder Zeile iteriert. Wenn eine Zelle nicht ausgefüllt ist, wird die Variable allCellsFilled auf false gesetzt und die Iteration wird beendet. Andernfalls wird der Wert für die aktuelle Spalte berechnet, indem der Wert in der Zelle mit dem Wert im Header multipliziert und zum entsprechenden Eintrag im columnValues-Array addiert wird.
+
+Nachdem alle Zeilen und Zellen durchlaufen wurden, wird überprüft, ob alle Zellen ausgefüllt sind. Wenn ja, werden eine Meldung und die Werte für jede Spalte in der Konsole protokolliert. Andernfalls wird eine Meldung angezeigt, dass nicht alle Zellen ausgefüllt sind.
+-->
