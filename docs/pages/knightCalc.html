@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+
+
+        <p id="charmTestCalc"></p>
+
+
+
+
+
+
+    </div>
+<!--
+1) Knight Power = [ ( number of strength talent stars * knight level * 20 ) + ( 100 * (book bonus ^ 0.5)) ]
+NOTE: To increase your knight power you focus on leveling your knights, adding strength edicts, talent experience on strength and…. Strength Books.  But you math folks will note that strength books are a diminishing return.  So sort your knights by knight power and apply the books where you feel they are needed and spread them around.
+
+2) Knight Talent Bonus = [ ( talent stars / 10 ) * ( 100 + 3 * ( level - 1 ) + ( level - 1 ) ^ 2 ) ] 
+NOTE: Your knight talent bonus is based on the relevant talent edicts/talent experience and the level of your knight. 
+
+3) Lover Power Points ( ballroom dancing ) -  67  * charm * ( charm + 100 ) / 1000
+4) Lover Power Points ( greetings ) 3 * charm * ( charm + 100 ) / 1000
+NOTE: CHARM should be on the lovers where you like their respective knights. Because, you will want to have them in the ballroom daily earning those lover power points.
+
+
+
+-->
+
+    
+</body>
+</html>
+<script>
+    var strengthStars = 9
+    var knightLevel = 500
+    var bookBonus = 27354000
+
+
+    // Charm Calculation
+    var charm = 15000
+    var result = (67  * charm * ( charm + 100 ) / 1000)
+
+    var label = document.getElementById('charmTestCalc')
+    label.textContent = result
+
+</script>

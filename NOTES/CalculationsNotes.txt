@@ -1,0 +1,25 @@
+lovers
+lvl * 100 = first two boosts
+first 4 percentage boosts 0,5% per level
+last one 0.2% each level i guess
+
+_____________________________________________
+
+talente overall is what is used in the calculation
+
+_____________________________________________
+
+Aura boost 
+get the show percentages going up in +3% steps i guess
+
+
+
+
+
+
+
+
+
+
+
+

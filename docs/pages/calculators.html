@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+
+        <div id="knightPower">
+
+
+            <h2>Knight Power</h2>
+
+            <label for="sttInput">
+                Strength Talent Value: <input type="number" id="sttInput">
+              </label>
+              
+              <label for="knightLevelkp">
+                Knight Level: <input type="number" id="knightLevelkp">
+              </label>
+              <label for="bookBonuskp">
+                Bookbonus (Strngth Only): <input type="number" id="bookBonuskp">
+              </label>
+              <label for="mountBoostkp">
+                Mount Power-Buff: <input type="number" id="mountBoostkp">
+              </label>
+
+              <button id="kpCalculate">Calculate</button>
+              <p id="kpResult"></p>
+        </div>
+
+        <div id="knightTalent">
+
+        </div>
+
+<div id="charmBall">
+
+    <h2>Charm influence on Ball-Points win</h2>
+    
+    <label for="charmBallInput">
+      Lovers Charm value: <input type="number" id="charmBallInput">
+    </label>
+
+    <button id="charmBallCalculate">Calculate</button>
+    <p id="charmBallResult"></p>
+
+
+</div>
+
+<div id="charmGreetings">
+    
+    <h2>Charm influence on Greetings-Points win</h2>
+    
+    <label for="charmGreetingInput">
+        Lovers Charm value: <input type="number" id="charmGreetingInput">
+      </label>
+  
+      <button id="charmGreetingCalculate">Calculate</button>
+      <p id="charmGreetingResult"></p>
+
+</div>
+
+    </div>
+    
+
+
+    <div id="talentCalc">
+
+        <h2>Talents Calculator</h2>
+
+        <details>
+            <summary>Calculate your overall Talent</summary>
+
+            <p>Please fill out all fields even if you have less Talents. <br> The input section provides max amount of possible attributes. If you dont have that many please enter 0</p>
+
+            <label for="valIn1">
+                Talent Value: <input type="number" id="valIn1" value="0">
+              </label>
+              <label for="valIn2">
+                Talent Value: <input type="number" id="valIn2" value="0">
+              </label>
+              <label for="valIn3">
+                Talent Value: <input type="number" id="valIn3" value="0">
+              </label>
+              <label for="valIn4">
+                Talent Value: <input type="number" id="valIn4" value="0">
+              </label>
+              <label for="valIn5">
+                Talent Value: <input type="number" id="valIn5" value="0">
+              </label>
+              <label for="valIn6">
+                Talent Value: <input type="number" id="valIn6" value="0">
+              </label>
+              <label for="valIn7">
+                Talent Value: <input type="number" id="valIn7" value="0">
+              </label>
+              <label for="valIn8">
+                Talent Value: <input type="number" id="valIn8" value="0">
+              </label>
+              
+              <button id="talentsCalc">Calculate</button>
+              <p id="talentResult"></p>
+        </details>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
+<script defer>
+// Knightpower
+
+var kpButton = document.getElementById('kpCalculate')
+kpButton.addEventListener('click',function(){
+   
+    var strength = document.getElementById('sttInput').valueAsNumber
+    var knightLevel = document.getElementById('knightLevelkp').valueAsNumber
+    var bookBonus = document.getElementById('bookBonuskp').valueAsNumber
+    var mountBuff = document.getElementById('mountBoostkp').valueAsNumber
+
+
+
+    var result = (20 * knightLevel * (strength) + 100 * Math.sqrt(bookBonus) + mountBuff)
+
+    var label = document.getElementById('kpResult')
+    var text = "Result: " + result.toString();
+    label.textContent = text
+
+})
+
+
+/******************************/
+// Knighttalent
+
+
+
+
+
+
+/******************************/
+//CHarmball
+
+var charmBallButton = document.getElementById('charmBallCalculate')
+charmBallButton.addEventListener('click', function(){
+    var charm = document.getElementById('charmBallInput').valueAsNumber
+
+    var result = (67  * charm * ( charm + 100 ) / 1000)
+    var label = document.getElementById('charmBallResult')
+    var text = "Result: " + result.toString();
+    label.textContent = text
+})
+
+/******************************/
+//CharmGreetings
+
+var charmGreetingButton = document.getElementById('charmGreetingCalculate')
+charmGreetingButton.addEventListener('click', function(){
+    var charm = document.getElementById('charmGreetingInput').valueAsNumber
+
+    var result = (3 * charm * ( charm + 100 ) / 1000)
+    var label = document.getElementById('charmGreetingResult')
+    var text = "Result: " + result.toString();
+    label.textContent = text
+})
+
+////// Talents ////////////////////
+
+
+var talentsButton = document.getElementById('talentsCalc')
+talentsButton.addEventListener('click', function(){
+var in1 = document.getElementById('valIn1').valueAsNumber
+var in2 = document.getElementById('valIn2').valueAsNumber
+var in3 = document.getElementById('valIn3').valueAsNumber
+var in4 = document.getElementById('valIn4').valueAsNumber
+var in5 = document.getElementById('valIn5').valueAsNumber
+var in6 = document.getElementById('valIn6').valueAsNumber
+var in7 = document.getElementById('valIn7').valueAsNumber
+var in8 = document.getElementById('valIn8').valueAsNumber
+
+var result = in1+in2+in3+in4+in5+in6+in7+in8
+var label = document.getElementById('talentResult')
+    var text = "Result: " + result.toString();
+    label.textContent = text
+
+})
+
+
+
+
+
+
+</script>

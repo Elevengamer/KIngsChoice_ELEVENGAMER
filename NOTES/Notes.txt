@@ -1,0 +1,51 @@
+Kings Choice 
+
+I just looked evrything up again and again.
+
+If i understand it right we have:
+- Basic Attributes calculated by Level
+- Book bonus added (basic + books.Exp)
+- Aura is % to add on
+- Lovers is % to add on
+- nego bonus what is adding too 
+
+- talent what is calculated by talent level, that is calculated
+	by talentSheets * Upgrade Chance
+- Costume bonus what adds like Talent bonus
+
+
+To get a conclution:
+
+I should add a possibility to get total amount of book experience
+I should add a calculation to get max average (additional) amount 
+of talents 
+
+___________________________________________________________________
+
+What is missing:
+Aura and Lover, Nego, Costume.
+As Aura and Lover Bonus is just percentage
+()
+----
+
+What i also have in mind is a possibility to calculate how much 
+silver it costs to upgrade the knights etc.
+
+----
+
+As there is the new Animal attributes that boost too
+
+Overall it is a lot that needs to be added
+
+
+___________________________________________________________________
+
+I am working on Calculation by myself right now.
+But if you already have some of them finished,
+or you could explain them how exactly they work.
+
+I will do everything additional
+
+
+
+
